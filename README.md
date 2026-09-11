@@ -2,7 +2,7 @@
 
 # MD ASIF AHMED ANTOR
 
-**MECHANICAL ENGINEERING UNDERGRADUATE**
+**MECHANICAL ENGINEERING UNDERGRADUATE STUDENT**
 
 MANUFACTURING ENGINEERING · VEHICLE ENGINEERING · COMPUTATIONAL METHODS
 
@@ -16,7 +16,7 @@ Southwest Petroleum University · Expected Graduation: June 2027
 
 ## ABOUT ME
 
-I am a Mechanical Engineering undergraduate at Southwest Petroleum University with academic interests in **advanced manufacturing and vehicle engineering**.
+I am an undergraduate student in Mechanical Engineering at Southwest Petroleum University, with academic interests in **advanced manufacturing and vehicle engineering**.
 
 My engineering foundation includes manufacturing processes, engineering materials, CAD modeling, workshop practice, and CNC and lathe operations. Through independent projects, I explore how **Python, machine learning, and interactive visualization** can support machining analysis and manufacturing performance evaluation.
 
