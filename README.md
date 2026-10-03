@@ -24,28 +24,45 @@ I am interested in graduate study and research that connects mechanical engineer
 
 ## PROJECT PORTFOLIO
 
-### 01 — CNC MACHINING PARAMETER OPTIMIZATION
+## 01 — CNC MACHINING PARAMETER OPTIMIZATION
 
-**Surface Roughness Prediction · Regression Modeling · Parameter Search**
+### Surface Roughness Prediction · Regression Modeling · Parameter Search
 
-Developed a machine learning application to predict surface roughness (Ra) from depth of cut, feed rate, cutting speed, material type, and cutting tool.
+Developed a machine learning application to predict surface roughness (Ra) from depth of cut, feed rate, cutting speed, material type, and cutting tool. The project combines regression modeling, group-aware model validation, parameter search, and an interactive Streamlit dashboard.
 
-**KEY CONTRIBUTIONS**
+### KEY CONTRIBUTIONS
 
-- Compared Linear Regression, Random Forest, Gradient Boosting, and Extra Trees using R², MAE, and RMSE.
-- Implemented a search across machining parameter combinations to identify conditions that minimize predicted surface roughness.
-- Built a Streamlit dashboard with interactive predictions, feature importance, parameter-effect analysis, and 3D optimization visualizations.
-- Added downloadable optimization reports.
+- Compared Linear Regression, Random Forest, Gradient Boosting, and Extra Trees using 5-fold group-aware cross-validation with R², MAE, and RMSE.
+- Grouped identical machining parameter combinations within the same validation fold to reduce data leakage from repeated machining conditions.
+- Implemented a parameter search within the ranges represented in the dataset to identify machining conditions associated with lower predicted surface roughness.
+- Built a Streamlit dashboard with interactive surface roughness prediction, feature importance, parameter-effect analysis, and 3D optimization visualizations.
+- Ranked model-predicted machining conditions by predicted surface roughness and displayed the Top 10 candidate conditions.
+- Added downloadable optimization results and reports.
 
-**REPORTED MODEL RESULTS**
+### VALIDATED MODEL PERFORMANCE
 
-| Model | R² | MAE | RMSE |
-|:------|---:|----:|-----:|
-| Extra Trees | 0.9907 | 0.0702 | 0.1087 |
+| Model | Mean R² | R² SD | Mean MAE | Mean RMSE |
+|---|---:|---:|---:|---:|
+| **Extra Trees** | **0.9738** | **0.0341** | **0.0758** | **0.1479** |
 
-*Results are reported in the project documentation. Optimization outputs are model predictions, rather than experimentally verified machining outcomes.*
+Performance is reported using **5-fold group-aware cross-validation**, where identical machining parameter combinations are kept within the same fold to reduce data leakage.
 
-**TECHNOLOGIES:** Python · Scikit-learn · Pandas · NumPy · Streamlit · Plotly · Matplotlib
+### MODEL-BASED OPTIMIZATION RESULT
+
+| Parameter | Best Model-Predicted Condition |
+|---|---:|
+| Depth of Cut (ap) | **0.75 mm** |
+| Feed Rate (f) | **0.10 mm/rev** |
+| Cutting Speed (Vc) | **200 m/min** |
+| Material | **41Cr4** |
+| Cutting Tool | **DNMG150608** |
+| Predicted Surface Roughness (Ra) | **0.362 µm** |
+
+> The optimization result is a model prediction obtained within the parameter ranges represented in the available dataset. It should not be interpreted as an experimentally verified optimal machining outcome.
+
+### TECHNOLOGIES
+
+Python · Scikit-learn · Pandas · NumPy · Streamlit · Plotly · Matplotlib
 
 [EXPLORE PROJECT →](https://github.com/asifahmedantor/CNC-machining-parameter-optimization-ml)
 
