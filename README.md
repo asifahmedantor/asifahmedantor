@@ -64,7 +64,7 @@ Performance is reported using **5-fold group-aware cross-validation**, where ide
 
 Python · Scikit-learn · Pandas · NumPy · Streamlit · Plotly · Matplotlib
 
-[EXPLORE PROJECT →](https://github.com/asifahmedantor/CNC-machining-parameter-optimization-ml)
+[EXPLORE PROJECT →](https://github.com/asifahmedantor/CNC-machining-parameter-optimization-ml) [OPEN LIVE DEMO →](https://cnc-machining-parameter-optimization-ml-jpeuabhm8aft5fsqxnppuk.streamlit.app/)
 
 ---
 
